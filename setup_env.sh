@@ -13,6 +13,7 @@ then
     echo "Ngrok đã được cài đặt"
 fi
 
+# Thay đổi phiên bản Java mặc định
 # Tự động chọn lựa chọn "0" cho auto mode
 echo "Đang thay đổi sang chế độ tự động chọn phiên bản Java có ưu tiên cao nhất (auto mode)..."
 sudo update-alternatives --auto java
@@ -23,3 +24,11 @@ sudo update-alternatives --auto java
 # Kiểm tra lại phiên bản Java sau khi thay đổi
 echo "Phiên bản Java hiện tại:"
 java -version
+
+# Cài đặt screen để chạy ngrok ở chế độ background
+if ! command -v screen &> /dev/null
+then
+    echo "Screen chưa được cài đặt. Đang cài đặt screen..."
+    sudo apt install screen
+    echo "Screen đã được cài đặt"
+fi
