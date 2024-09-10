@@ -12,3 +12,14 @@ then
 	&& sudo apt install ngrok
     echo "Ngrok đã được cài đặt"
 fi
+
+# Tự động chọn lựa chọn "0" cho auto mode
+echo "Đang thay đổi sang chế độ tự động chọn phiên bản Java có ưu tiên cao nhất (auto mode)..."
+sudo update-alternatives --auto java
+
+# Tự động thay đổi javac sang auto mode
+sudo update-alternatives --auto javac
+
+# Kiểm tra lại phiên bản Java sau khi thay đổi
+echo "Phiên bản Java hiện tại:"
+java -version
