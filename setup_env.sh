@@ -18,7 +18,7 @@ echo "Đang thay đổi sang chế độ tự động chọn phiên bản Java c
 sudo update-alternatives --auto java
 
 # Tự động thay đổi javac sang auto mode
-sudo update-alternatives --auto javac
+# sudo update-alternatives --auto javac
 
 # Kiểm tra lại phiên bản Java sau khi thay đổi
 echo "Phiên bản Java hiện tại:"
