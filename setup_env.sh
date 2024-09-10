@@ -29,6 +29,6 @@ java -version
 if ! command -v screen &> /dev/null
 then
     echo "Screen chưa được cài đặt. Đang cài đặt screen..."
-    sudo apt install screen
+    sudo apt install screen -y
     echo "Screen đã được cài đặt"
 fi
